@@ -65,14 +65,58 @@
 //     }
 // }
 
-var array2 = [5,8,2,9,5,6,3,1];
+// var array2 = [5, 8, 2, 9, 5, 6, 3, 1];
 
-function reverseArray(array1) {
-    var array1 = ["yes","no","maybe", "always","sometimes","never","if"];
-    var newArray = [];
-    for (var i = array.length - 1; i > 0; i--) {
-        newArray.push(array1[i]);
-        console.log(array1);
+// function reverseArray(array1) {
+//     var array1 = ["yes", "no", "maybe", "always", "sometimes", "never", "if"];
+//     var newArray = [];
+//     for (var i = array.length - 1; i > 0; i--) {
+//         newArray.push(array1[i]);
+//         console.log(array1);
+//     }
+//     return newArray;
+// }
+
+// let isValidPass = function (password) {
+//     let hasLower = false;
+//     let hasUpper = false;
+
+//     if (password.length < 8) {
+//         return false;
+//     }
+//     for (let i = 0; i < password.length; i++) {
+//         if (password[i].toLowerCase() === password[i]) {
+//             hasLower = true;
+//         }
+//         if (password[i].toUpperCase() === password[i]) {
+//             hasUpper = true;
+//         }
+
+//     }
+// }
+// return hasLower && hasUpper;
+
+//wrtie a function that takes an array and element to find without using array methods
+//return true if the element is in the array or false otherwise.
+newArray = [];
+input = "";
+let search = () => {
+    for (i = 0; i < newArray.length; i++)
+        if (newArray[i] === input)
+            return true
+        else return false
+}
+search();
+
+numArray = [1, 2, 3];
+newArray = [];
+
+let double = () => {
+    for (i = 0; i < numArray.length; i++){
+        numArray[i] * 2 
+        newArray.push(numArray)
     }
     return newArray;
+
+
 }
