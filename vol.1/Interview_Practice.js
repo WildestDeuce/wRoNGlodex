@@ -98,25 +98,34 @@
 
 //wrtie a function that takes an array and element to find without using array methods
 //return true if the element is in the array or false otherwise.
-newArray = [];
-input = "";
-let search = () => {
-    for (i = 0; i < newArray.length; i++)
-        if (newArray[i] === input)
-            return true
-        else return false
-}
-search();
+// newArray = [];
+// input = "";
+// let search = () => {
+//     for (i = 0; i < newArray.length; i++)
+//         if (newArray[i] === input)
+//             return true
+//         else return false
+// }
+// search();
 
-numArray = [1, 2, 3];
-newArray = [];
+// numArray = [1, 2, 3];
+// newArray = [];
 
-let double = () => {
-    for (i = 0; i < numArray.length; i++){
-        numArray[i] * 2 
-        newArray.push(numArray)
+// let double = () => {
+//     for (i = 0; i < numArray.length; i++){
+//         numArray[i] * 2 
+//         newArray.push(numArray)
+//     }
+//     return newArray;
+
+
+// }
+let newArray = [];
+let numArray = [1, 2, 3];
+var map = function (arr, callback) {
+    for (i = 0; i < numArray.length; i++) {
+        var newNum = callback(arr[i]);
+        newArray.push(newNum);
     }
     return newArray;
-
-
 }
