@@ -1,4 +1,4 @@
-const interview = require('../vol.1/Interview_Practice');
+const interview = require('./interview_Practice');
 
 
 //What will be printed on the browser console?
