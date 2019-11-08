@@ -1,3 +1,6 @@
+const interview = require('../vol.1/Interview_Practice');
+
+
 //What will be printed on the browser console?
 
 // var a = 10;
@@ -126,6 +129,7 @@ var map = function (arr, callback) {
     for (i = 0; i < numArray.length; i++) {
         var newNum = callback(arr[i]);
         newArray.push(newNum);
+        console.log(newNum)
     }
     return newArray;
 }
